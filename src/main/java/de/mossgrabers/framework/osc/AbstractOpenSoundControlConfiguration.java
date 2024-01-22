@@ -55,17 +55,17 @@ public abstract class AbstractOpenSoundControlConfiguration extends AbstractConf
      */
     protected void activateOSCLogging (final ISettingsUI settingsUI)
     {
-        final IEnumSetting logInputCommandsSetting = settingsUI.getEnumSetting ("Log input commands", CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
+        final IEnumSetting logInputCommandsSetting = settingsUI.getEnumSetting ("Log input commands", "OSC - " + CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
         logInputCommandsSetting.addValueObserver (value -> {
             this.logInputCommands = "On".equals (value);
             this.notifyObservers (LOG_INPUT_COMMANDS);
         });
-        final IEnumSetting logOutputCommandsSetting = settingsUI.getEnumSetting ("Log output commands", CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
+        final IEnumSetting logOutputCommandsSetting = settingsUI.getEnumSetting ("Log output commands", "OSC - " + CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
         logOutputCommandsSetting.addValueObserver (value -> {
             this.logOutputCommands = "On".equals (value);
             this.notifyObservers (LOG_OUTPUT_COMMANDS);
         });
-        final IEnumSetting filterHeartbeatCommandsSetting = settingsUI.getEnumSetting ("Filter heartbeat commands (ping etc.)", CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
+        final IEnumSetting filterHeartbeatCommandsSetting = settingsUI.getEnumSetting ("Filter heartbeat commands (ping etc.)", "OSC - " + CATEGORY_DEBUG, ON_OFF_OPTIONS, ON_OFF_OPTIONS[0]);
         filterHeartbeatCommandsSetting.addValueObserver (value -> {
             this.filterHeartbeatCommands = "On".equals (value);
             this.notifyObservers (FILTER_HEARTBEAT_COMMANDS);

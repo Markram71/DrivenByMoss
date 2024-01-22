@@ -142,10 +142,10 @@ public abstract class AbstractConfiguration implements Configuration
     protected static final String    CATEGORY_DRUMS                  = "Drum Sequencer";
     protected static final String    CATEGORY_SCALES                 = "Scales";
     protected static final String    CATEGORY_SESSION                = "Session";
-    protected static final String    CATEGORY_TRANSPORT              = "Transport";
-    protected static final String    CATEGORY_WORKFLOW               = "Workflow";
+    protected static final String    CATEGORY_TRANSPORT              = "OSC - Transport";
+    protected static final String    CATEGORY_WORKFLOW               = "OSC - Workflow";
     protected static final String    CATEGORY_PADS                   = "Pads";
-    protected static final String    CATEGORY_PLAY_AND_SEQUENCE      = "Play and Sequence";
+    protected static final String    CATEGORY_PLAY_AND_SEQUENCE      = "OSC - Play and Sequence";
     protected static final String    CATEGORY_HARDWARE_SETUP         = "Hardware Setup";
     protected static final String    CATEGORY_DEBUG                  = "Debug";
     protected static final String    CATEGORY_NOTEREPEAT             = "Note Repeat";

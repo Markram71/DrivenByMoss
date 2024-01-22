@@ -4,6 +4,7 @@
 
 package de.mossgrabers.bitwig.framework.daw;
 
+import de.drMartinKramer.handler.DeviceHandler;
 import de.mossgrabers.bitwig.framework.daw.data.ParameterImpl;
 import de.mossgrabers.bitwig.framework.daw.data.Util;
 import de.mossgrabers.bitwig.framework.daw.data.bank.ParameterBankImpl;
@@ -58,16 +59,26 @@ public class ProjectImpl implements IProject
         this.cueVolumeParameter = new ParameterImpl (valueChanger, this.project.cueVolume (), 0);
         this.cueMixParameter = new ParameterImpl (valueChanger, this.project.cueMix (), 0);
 
-        final int checkedNumParamPages = numParamPages >= 0 ? numParamPages : 8;
-        final int checkedNumParams = numParams >= 0 ? numParams : 8;
+        int checkedNumParamPages = numParamPages >= 0 ? numParamPages : 8;
+        int checkedNumParams = numParams >= 0 ? numParams : 8;
+        
+        //MKR: I am correcting the parameter bank size down to 8 (in case it's 16)
+        if(checkedNumParams >8) checkedNumParams = 8;
+        if(checkedNumParamPages >8) checkedNumParamPages = 8;
+
         if (checkedNumParams > 0)
         {
-            final Track rootTrackGroup = this.project.getRootTrackGroup ();
-            final CursorRemoteControlsPage remoteControlsPage = rootTrackGroup.createCursorRemoteControlsPage (checkedNumParams);
+            
+            //MKR: original statement to create a cursor remote controls page
+            //final Track rootTrackGroup = this.project.getRootTrackGroup ();
+            //final CursorRemoteControlsPage remoteControlsPage = rootTrackGroup.createCursorRemoteControlsPage (checkedNumParams);
+            //I am changing this to make use of the remote control page that I have created in the 
+            //DeviceHandler. 
+            final CursorRemoteControlsPage remoteControlsPage = DeviceHandler.getProjectControlsPage();
             this.parameterBank = new ParameterBankImpl (host, valueChanger, remoteControlsPage, checkedNumParamPages, checkedNumParams);
         }
         else
-            this.parameterBank = null;
+            this.parameterBank = null;   
     }
 
 

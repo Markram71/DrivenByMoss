@@ -77,7 +77,8 @@ public class MidiInputImpl implements IMidiInput
     @Override
     public void setMidiCallback (final MidiShortCallback callback)
     {
-        this.port.setMidiCallback (callback::handleMidi);
+        //Todo fix this, MKR: I want to control the midi messages
+        //this.port.setMidiCallback (callback::handleMidi);
     }
 
 

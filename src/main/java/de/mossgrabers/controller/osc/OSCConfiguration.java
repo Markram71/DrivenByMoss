@@ -25,7 +25,7 @@ import de.mossgrabers.framework.osc.AbstractOpenSoundControlConfiguration;
  */
 public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
 {
-    private static final String CATEGORY_SETUP         = "Setup";
+    private static final String CATEGORY_SETUP         = "OSC - Setup";
 
     /** ID for receive port setting. */
     public static final Integer RECEIVE_PORT           = Integer.valueOf (50);
@@ -33,7 +33,7 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
     public static final Integer VALUE_RESOLUTION       = Integer.valueOf (51);
 
     /** The number of assignable actions. */
-    public static final int     NUM_ASSIGNABLE_ACTIONS = 20;
+    public static final int     NUM_ASSIGNABLE_ACTIONS = 10;
 
 
     /** The resolution for values. */
@@ -48,7 +48,7 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
     }
 
 
-    private static final String    CATEGORY_PROTOCOL         = "Protocol (must match your client template!)";
+    private static final String    CATEGORY_PROTOCOL         = "OSC - Protocol (must match your client template!)";
 
     private static final String [] VALUE_RESOLUTION_OPTIONS  =
     {
@@ -61,7 +61,7 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
     private String                 sendHost                  = DEFAULT_SERVER;
     private int                    sendPort                  = 9000;
     private ValueResolution        valueResolution           = ValueResolution.LOW;
-    private int                    bankPageSize              = 8;
+    private int                    bankPageSize              = 16;
     private final String []        assignableFunctionActions = new String [NUM_ASSIGNABLE_ACTIONS];
 
 
@@ -87,6 +87,7 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
         ///////////////////////////
         // Network
 
+        
         final IIntegerSetting receivePortSetting = globalSettings.getRangeSetting ("Port to receive on", CATEGORY_SETUP, 1024, 65535, 1, "", 8000);
         receivePortSetting.addValueObserver (value -> {
             this.receivePort = value.intValue ();
@@ -119,8 +120,8 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
         final String [] pageSize = new String [200];
         for (int i = 0; i < pageSize.length; i++)
             pageSize[i] = Integer.toString (i + 1);
-        final IEnumSetting bankPageSizeSetting = globalSettings.getEnumSetting ("Bank Page Size (requires restart)", CATEGORY_PROTOCOL, pageSize, pageSize[7]);
-        this.bankPageSize = Integer.parseInt (bankPageSizeSetting.get ());
+        //final IEnumSetting bankPageSizeSetting = globalSettings.getEnumSetting ("Bank Page Size (requires restart)", CATEGORY_PROTOCOL, pageSize, pageSize[7]);
+        //this.bankPageSize = Integer.parseInt (bankPageSizeSetting.get ());
 
         ///////////////////////////
         // Transport
@@ -146,13 +147,13 @@ public class OSCConfiguration extends AbstractOpenSoundControlConfiguration
         for (int i = 0; i < this.assignableFunctionActions.length; i++)
         {
             final int pos = i;
-            final IActionSetting actionSetting = globalSettings.getActionSetting ("Action " + (i + 1), "Actions");
+            final IActionSetting actionSetting = globalSettings.getActionSetting ("Action " + (i + 1), "OSC - Actions");
             actionSetting.addValueObserver (value -> this.assignableFunctionActions[pos] = actionSetting.get ());
         }
 
         ///////////////////////////
         // Debug
-
+        
         this.activateOSCLogging (globalSettings);
     }
 
