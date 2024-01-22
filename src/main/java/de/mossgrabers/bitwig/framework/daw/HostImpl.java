@@ -99,7 +99,7 @@ public class HostImpl implements IHost
         this.host = host;
 
         //Todo: throws an expection as it cannot find the devices/instruments.txt file
-        //readDeviceFiles ();
+        readDeviceFiles ();
     }
 
 
