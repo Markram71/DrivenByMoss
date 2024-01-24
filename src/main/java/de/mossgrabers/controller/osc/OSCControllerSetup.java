@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.drMartinKramer.osc.OSC_MixerModule;
+
 import de.mossgrabers.controller.osc.module.ActionModule;
 import de.mossgrabers.controller.osc.module.BrowserModule;
 import de.mossgrabers.controller.osc.module.ClipModule;
