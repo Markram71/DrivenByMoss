@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.drMartinKramer.osc.OSC_MixerModule;
 import de.mossgrabers.controller.osc.module.ActionModule;
 import de.mossgrabers.controller.osc.module.BrowserModule;
 import de.mossgrabers.controller.osc.module.ClipModule;
@@ -68,6 +69,14 @@ public class OSCControllerSetup extends AbstractControllerSetup<IControlSurface<
         this.colorManager = new OSCColorManager ();
         this.valueChanger = new TwosComplementValueChanger (128, 1);
         this.configuration = new OSCConfiguration (host, this.valueChanger, factory.getArpeggiatorModes ());
+    }
+
+    /**
+     * Returns the OSCWriter object used for sending OSC messages.     
+     * @return The OSCWriter object.
+     */
+    public OSCWriter getOSCWriter(){
+        return this.writer;
     }
 
 
