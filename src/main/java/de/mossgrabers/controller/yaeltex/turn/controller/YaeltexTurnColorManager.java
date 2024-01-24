@@ -25,7 +25,7 @@ import java.util.Map;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class YaeltexTurnColorManager extends ColorManager
 {
     private static final ColorEx []           COLOR_TABLE            =

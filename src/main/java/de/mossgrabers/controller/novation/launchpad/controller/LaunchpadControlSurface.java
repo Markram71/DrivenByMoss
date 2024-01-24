@@ -32,7 +32,7 @@ import java.util.Optional;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchpadControlSurface extends AbstractControlSurface<LaunchpadConfiguration>
 {
     public static final int                      LAUNCHPAD_BUTTON_SCENE1     = 89;                   // 1/4

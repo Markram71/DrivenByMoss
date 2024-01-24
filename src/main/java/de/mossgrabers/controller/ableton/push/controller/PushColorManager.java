@@ -27,7 +27,7 @@ import de.mossgrabers.framework.view.sequencer.ClipLengthView;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class PushColorManager extends ColorManager
 {
     /** ID for color when button signals a recording state. */

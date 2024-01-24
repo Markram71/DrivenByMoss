@@ -25,7 +25,7 @@ import java.util.List;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class MaschineColorManager extends ColorManager
 {
     public static final int           COLOR_BLACK        = 0;

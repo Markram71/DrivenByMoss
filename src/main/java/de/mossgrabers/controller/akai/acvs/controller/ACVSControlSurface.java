@@ -22,7 +22,7 @@ import java.util.Optional;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class ACVSControlSurface extends AbstractControlSurface<ACVSConfiguration>
 {
     /** Expect a pong every 5 seconds. */

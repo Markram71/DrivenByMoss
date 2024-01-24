@@ -20,7 +20,7 @@ import de.mossgrabers.framework.utils.StringUtils;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class SLMkIIIControlSurface extends AbstractControlSurface<SLMkIIIConfiguration>
 {
     public static final int MKIII_KNOB_1            = 0x15;

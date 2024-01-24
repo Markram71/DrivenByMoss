@@ -17,7 +17,7 @@ import de.mossgrabers.framework.view.sequencer.AbstractSequencerView;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchControlXLColorManager extends ColorManager
 {
     public static final int LAUNCHCONTROL_COLOR_BLACK     = 12;

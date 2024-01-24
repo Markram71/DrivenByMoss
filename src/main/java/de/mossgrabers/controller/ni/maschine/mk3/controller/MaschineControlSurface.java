@@ -22,7 +22,7 @@ import de.mossgrabers.framework.daw.midi.IMidiOutput;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class MaschineControlSurface extends AbstractMaschineControlSurface<MaschineConfiguration>
 {
     // MIDI CC

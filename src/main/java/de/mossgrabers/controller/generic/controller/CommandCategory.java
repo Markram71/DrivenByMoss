@@ -9,7 +9,7 @@ package de.mossgrabers.controller.generic.controller;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public enum CommandCategory
 {
     BROWSER("Browser"),

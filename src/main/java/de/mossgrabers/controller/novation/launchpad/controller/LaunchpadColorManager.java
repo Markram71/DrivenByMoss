@@ -25,7 +25,7 @@ import de.mossgrabers.framework.view.sequencer.ClipLengthView;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchpadColorManager extends ColorManager
 {
     public static final int           LAUNCHPAD_COLOR_BLACK            = 0;

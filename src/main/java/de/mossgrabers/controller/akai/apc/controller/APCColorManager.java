@@ -23,7 +23,7 @@ import de.mossgrabers.framework.view.sequencer.AbstractSequencerView;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class APCColorManager extends ColorManager
 {
     // APC Colors for 5x8 clip matrix

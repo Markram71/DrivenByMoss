@@ -25,7 +25,7 @@ import de.mossgrabers.framework.view.Views;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchkeyMk3ControlSurface extends AbstractControlSurface<LaunchkeyMk3Configuration>
 {
     /** Device family code of Launchkey 25 model. */

@@ -82,7 +82,7 @@ public class SendMode extends AbstractTrackMode
 
 
     /** {@inheritDoc} */
-    @SuppressWarnings("null")
+    //@SuppressWarnings("null")
     @Override
     public void updateDisplay2 (final IGraphicDisplay display)
     {

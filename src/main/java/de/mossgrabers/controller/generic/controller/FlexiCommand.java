@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public enum FlexiCommand
 {
     OFF(null, "Off", false),

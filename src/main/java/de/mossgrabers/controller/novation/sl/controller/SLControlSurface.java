@@ -20,7 +20,7 @@ import de.mossgrabers.framework.daw.midi.IMidiOutput;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class SLControlSurface extends AbstractControlSurface<SLConfiguration>
 {
     public static final int     MKII_KNOB_ROW2_1           = 8;

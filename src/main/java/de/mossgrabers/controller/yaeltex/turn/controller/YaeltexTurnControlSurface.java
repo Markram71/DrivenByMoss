@@ -20,7 +20,7 @@ import java.util.Arrays;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class YaeltexTurnControlSurface extends AbstractControlSurface<YaeltexTurnConfiguration>
 {
     // Zero based!

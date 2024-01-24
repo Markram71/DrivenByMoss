@@ -22,7 +22,7 @@ import java.util.Arrays;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchControlXLControlSurface extends AbstractControlSurface<LaunchControlXLConfiguration>
 {
     // Knobs & Faders - MIDI CC

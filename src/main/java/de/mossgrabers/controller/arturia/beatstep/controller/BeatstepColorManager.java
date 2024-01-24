@@ -15,7 +15,7 @@ import de.mossgrabers.framework.scale.Scales;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class BeatstepColorManager extends ColorManager
 {
     public static final int BEATSTEP_BUTTON_STATE_INVALID = -1;

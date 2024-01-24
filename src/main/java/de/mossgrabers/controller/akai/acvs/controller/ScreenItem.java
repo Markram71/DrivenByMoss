@@ -9,7 +9,7 @@ package de.mossgrabers.controller.akai.acvs.controller;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public enum ScreenItem
 {
     TRACK1_SELECT(0, true, 0),

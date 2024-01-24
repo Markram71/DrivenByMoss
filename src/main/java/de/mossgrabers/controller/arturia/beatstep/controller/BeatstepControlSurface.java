@@ -19,7 +19,7 @@ import de.mossgrabers.framework.utils.ButtonEvent;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class BeatstepControlSurface extends AbstractControlSurface<BeatstepConfiguration>
 {
     public static final int BEATSTEP_SHIFT      = 7;

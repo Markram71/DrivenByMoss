@@ -16,7 +16,7 @@ import de.mossgrabers.framework.daw.data.ISend;
 public class EmptySend extends EmptyParameter implements ISend
 {
     /** The singleton. */
-    @SuppressWarnings("hiding")
+    //@SuppressWarnings("hiding")
     public static final ISend INSTANCE = new EmptySend ();
 
 

@@ -18,7 +18,7 @@ import de.mossgrabers.framework.daw.midi.IMidiOutput;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class APCminiControlSurface extends AbstractControlSurface<APCminiConfiguration>
 {
     // MIDI Notes

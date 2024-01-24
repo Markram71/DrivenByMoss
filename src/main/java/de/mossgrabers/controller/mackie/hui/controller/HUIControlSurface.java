@@ -34,7 +34,7 @@ import java.util.Map;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class HUIControlSurface extends AbstractControlSurface<HUIConfiguration>
 {
     public static final int         HUI_FADER1                   = 0;

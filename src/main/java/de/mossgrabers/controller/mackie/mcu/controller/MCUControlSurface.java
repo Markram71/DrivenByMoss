@@ -22,7 +22,7 @@ import java.util.List;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class MCUControlSurface extends AbstractControlSurface<MCUConfiguration>
 {
     // Notes 0x90

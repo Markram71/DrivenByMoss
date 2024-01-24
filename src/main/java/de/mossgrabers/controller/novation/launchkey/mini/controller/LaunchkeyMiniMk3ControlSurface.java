@@ -24,7 +24,7 @@ import de.mossgrabers.framework.view.Views;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchkeyMiniMk3ControlSurface extends AbstractControlSurface<LaunchkeyMiniMk3Configuration>
 {
     // Buttons & Knobs

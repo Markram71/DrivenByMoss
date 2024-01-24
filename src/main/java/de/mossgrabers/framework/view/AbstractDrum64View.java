@@ -310,7 +310,7 @@ public abstract class AbstractDrum64View<S extends IControlSurface<C>, C extends
     }
 
 
-    @SuppressWarnings("unused")
+    //@SuppressWarnings("unused")
     protected void handleDeleteButton (final int playedPad)
     {
         // Intentionally empty
@@ -331,7 +331,7 @@ public abstract class AbstractDrum64View<S extends IControlSurface<C>, C extends
     }
 
 
-    @SuppressWarnings("unused")
+    //@SuppressWarnings("unused")
     protected void handleSelectButton (final int playedPad)
     {
         // Intentionally empty

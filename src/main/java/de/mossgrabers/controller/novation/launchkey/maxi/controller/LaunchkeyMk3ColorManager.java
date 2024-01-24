@@ -22,7 +22,7 @@ import de.mossgrabers.framework.view.sequencer.AbstractSequencerView;
  *
  * @author Jürgen Moßgraber
  */
-@SuppressWarnings("javadoc")
+//@SuppressWarnings("javadoc")
 public class LaunchkeyMk3ColorManager extends ColorManager
 {
     public static final int LAUNCHKEY_COLOR_BLACK            = 0;
