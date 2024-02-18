@@ -71,7 +71,7 @@ public class BrowserImpl extends AbstractBrowser
 
         this.filterColumns = new BrowserFilterColumn []
         {
-            // TODO Remove this for the time being until the browser API gets adapted to Bitwig 5
+            // TO-DO Remove this for the time being until the browser API gets adapted to Bitwig 5
             // this.browser.smartCollectionColumn (),
             this.browser.locationColumn (),
             this.browser.fileTypeColumn (),
@@ -149,7 +149,7 @@ public class BrowserImpl extends AbstractBrowser
     public String getSelectedContentType ()
     {
         return "Result";
-        // TODO Currently not working in Bitwig 5, requires adaption to the new browser
+        // TO-DO Currently not working in Bitwig 5, requires adaption to the new browser
         // return this.browser.selectedContentTypeName ().get ();
     }
 

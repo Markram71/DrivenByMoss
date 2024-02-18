@@ -60,7 +60,7 @@ public class ParameterImpl extends RangedValueImpl
 
         this.parameter = parameter;
 
-        // TODO Bugfix required: https://github.com/teotigraphix/Framework4Bitwig/issues/268
+        // TO-DO Bugfix required: https://github.com/teotigraphix/Framework4Bitwig/issues/268
         this.fixNames = fixNames;
 
         parameter.exists ().markInterested ();

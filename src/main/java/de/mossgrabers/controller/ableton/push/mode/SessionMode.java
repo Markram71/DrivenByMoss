@@ -312,7 +312,7 @@ public class SessionMode extends AbstractTrackMode implements IPush3Encoder
                 }
                 else
                 {
-                    // TODO Bugfix required: Workaround to displaying unnamed clips, since
+                    // TO-DO Bugfix required: Workaround to displaying unnamed clips, since
                     // doesExist does not work reliably -
                     // https://github.com/teotigraphix/Framework4Bitwig/issues/193
                     if (name.isEmpty ())

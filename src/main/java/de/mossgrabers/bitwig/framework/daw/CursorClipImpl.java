@@ -71,7 +71,7 @@ public class CursorClipImpl implements INoteClip
 
         this.launcherData = new IStepInfo [16] [this.numSteps] [];
 
-        // TODO Bugfix required: https://github.com/teotigraphix/Framework4Bitwig/issues/140
+        // TO-DO Bugfix required: https://github.com/teotigraphix/Framework4Bitwig/issues/140
         this.launcherClip = cursorTrack.createLauncherCursorClip (this.numSteps, this.numRows);
 
         this.launcherClip.addNoteStepObserver (this::handleStepData);

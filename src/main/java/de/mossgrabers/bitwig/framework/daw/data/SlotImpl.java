@@ -173,7 +173,7 @@ public class SlotImpl extends AbstractItemImpl implements ISlot
     @Override
     public ColorEx getColor ()
     {
-        // TODO API extension required - https://github.com/teotigraphix/Framework4Bitwig/issues/218
+        // TO-DO API extension required - https://github.com/teotigraphix/Framework4Bitwig/issues/218
         if (this.track.isGroup ())
             return this.track.getColor ();
 
