@@ -10,6 +10,8 @@ import de.mossgrabers.framework.parameter.IParameter;
 
 import java.util.Arrays;
 
+import com.bitwig.extension.controller.api.InsertionPoint;
+
 
 /**
  * Interface to a track.
@@ -268,4 +270,12 @@ public interface ITrack extends IChannel
      * @return True if it contains a drum device
      */
     boolean hasDrumDevice ();
+    
+
+     /**
+     * This returns insertionPOint at the CursorTrack to insert new devices
+     * @return an InsertionPoint which can be used to insert new devices
+     */
+    public InsertionPoint endOfDeviceChainInsertionPoint();
+    
 }

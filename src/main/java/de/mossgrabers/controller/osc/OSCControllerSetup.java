@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import de.drMartinKramer.osc.OSC_AddElementsModule;
+import de.drMartinKramer.osc.OSC_CommandsModule;
 import de.mossgrabers.controller.osc.module.ActionModule;
 import de.mossgrabers.controller.osc.module.BrowserModule;
 import de.mossgrabers.controller.osc.module.ClipModule;
@@ -219,6 +220,11 @@ public class OSCControllerSetup extends AbstractControllerSetup<IControlSurface<
         modules.add (new MidiModule (this.host, this.model, surface, this.writer, this.keyManager));
         modules.add (new ActionModule (this.host, this.model, this.writer, this.configuration));
         modules.add (new ClipModule (this.host, this.model, this.writer));
+
+        //Addtion by Martin Kramer for the BitwigPerformanceTwister OSC Addition: 
+        //TODO: add addional OSC modeles right here
+        modules.add (new OSC_CommandsModule(this.host, this.model, this.writer));
+        modules.add (new OSC_AddElementsModule(this.host, this.model, this.writer));
 
         modules.forEach (module -> {
             this.writer.registerModule (module);

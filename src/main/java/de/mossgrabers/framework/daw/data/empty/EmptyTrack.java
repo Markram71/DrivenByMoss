@@ -12,6 +12,8 @@ import de.mossgrabers.framework.parameter.IParameter;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.bitwig.extension.controller.api.InsertionPoint;
+
 
 /**
  * Default data for an empty track.
@@ -259,5 +261,13 @@ public class EmptyTrack extends EmptyChannel implements ITrack
     public boolean hasDrumDevice ()
     {
         return false;
+    }
+
+     /**
+     * This returns insertionPOint at the CursorTrack to insert new devices
+     * @return an InsertionPoint which can be used to insert new devices
+     */
+    public InsertionPoint endOfDeviceChainInsertionPoint(){
+        return null;
     }
 }

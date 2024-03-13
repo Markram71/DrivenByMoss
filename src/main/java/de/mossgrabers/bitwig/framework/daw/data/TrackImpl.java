@@ -22,6 +22,7 @@ import com.bitwig.extension.controller.api.CursorTrack;
 import com.bitwig.extension.controller.api.Device;
 import com.bitwig.extension.controller.api.DeviceBank;
 import com.bitwig.extension.controller.api.DeviceMatcher;
+import com.bitwig.extension.controller.api.InsertionPoint;
 import com.bitwig.extension.controller.api.PlayingNote;
 import com.bitwig.extension.controller.api.SceneBank;
 import com.bitwig.extension.controller.api.Track;
@@ -461,5 +462,14 @@ public class TrackImpl extends ChannelImpl implements ITrack
     public Track getTrack ()
     {
         return this.track;
+    }
+
+
+     /**
+     * This returns insertionPOint at the CursorTrack to insert new devices
+     * @return an InsertionPoint which can be used to insert new devices
+     */
+    public InsertionPoint endOfDeviceChainInsertionPoint(){
+        return track.endOfDeviceChainInsertionPoint();
     }
 }
