@@ -84,6 +84,13 @@ public class ClipModule extends AbstractModule
                     cursorClip.quantize (1);
                 return;
 
+            case "loopLengthBeats": 
+                cursorClip.setLoopLength(toInteger(value));
+                break;
+            case "loopLengthBars": 
+                cursorClip.setLoopLength(toInteger(value)*4);
+                break;
+
             case TAG_NAME:
                 if (value != null && cursorClip.doesExist ())
                     cursorClip.setName (value.toString ());
@@ -166,7 +173,11 @@ public class ClipModule extends AbstractModule
 
         this.writer.sendOSC ("/clip/exists", cursorClip.doesExist (), dump);
         this.writer.sendOSC ("/clip/pinned", cursorClip.isPinned (), dump);
+        this.writer.sendOSC ("/clip/loopLengthBeats", cursorClip.getLoopLength(), dump);
+        this.writer.sendOSC ("/clip/loopLengthBars", cursorClip.getLoopLength()/4, dump);
+        this.writer.sendOSC ("/clip/loopStartBars", cursorClip.getLoopStart()/4, dump);
 
+        
         ColorEx color = cursorClip.getColor ();
         if (color == null)
             color = ColorEx.BLACK;
