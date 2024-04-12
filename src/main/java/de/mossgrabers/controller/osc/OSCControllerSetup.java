@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.drMartinKramer.osc.OSC_AddElementsModule;
-import de.drMartinKramer.osc.OSC_CommandsModule;
 import de.drMartinKramer.osc.OSC_Helper;
 import de.mossgrabers.controller.osc.module.ActionModule;
 import de.mossgrabers.controller.osc.module.BrowserModule;
